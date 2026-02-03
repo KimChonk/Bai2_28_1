@@ -1,0 +1,11 @@
+{
+  "name": "store-management",
+  "version": "1.0.0",
+  "description": "Store Management System",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

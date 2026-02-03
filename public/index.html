@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Store Management</h1>
+        </header>
+
+        <main>
+            <section class="add-post-section">
+                <h2>Add New Product</h2>
+                <form id="postForm">
+                    <input type="hidden" id="postId">
+                    <input type="text" id="postTitle" placeholder="Product Name" required>
+                    <input type="number" id="postPrice" placeholder="Price" required>
+                    <input type="number" id="postViews" placeholder="Views" required>
+                    <button type="submit" id="submitBtn">Add Product</button>
+                    <button type="reset" id="resetBtn">Reset</button>
+                </form>
+            </section>
+
+            <section class="products-section">
+                <h2>Products List</h2>
+                <div id="postsList" class="posts-container"></div>
+            </section>
+        </main>
+    </div>
+
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close">&times;</button>
+            <h2>Comments for <span id="modalPostTitle"></span></h2>
+            <div class="add-comment-section">
+                <input type="text" id="commentText" placeholder="Add a comment...">
+                <button id="addCommentBtn">Add Comment</button>
+            </div>
+            <div id="commentsList" class="comments-container"></div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
